@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Meow</title>
+		<link href="normalize.css" rel="stylesheet">
+		<link rel="stylesheet" href="style.css">
+		<link href='http://fonts.googleapis.com/css?family=Roboto+Condensed:700,400' rel='stylesheet' type='text/css'>
+	</head>
+	<body>
+		<div class="form-container">
+			<form id="meow-form">
+				<label for=name>Type Anything:</label>
+  				<input id="meow-input" name="field" maxlength="255" type="text" autocomplete="off">
+  				<button type="submit">Go!</button>
+  				<output id="meow-output"></output>
+			</form>
+		</div>
+		<script type="text/javascript" src="meow.js"></script>
+		<script type="text/javascript">
+			var form = document.getElementById("meow-form");
+			form.addEventListener('submit', send, true);
+		</script>
+	</body>
+</html>
